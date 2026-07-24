@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleaning Website Demo | Residential &amp; Commercial Cleaning</title>
+<meta name="description" content="Trusted residential and commercial cleaning. Get an instant quote in under a minute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <path d="M20 4C20 4 8 15 8 24a12 12 0 0 0 24 0C32 15 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M14 25c0 4 2.7 7 6 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      Cleaning Website <em>Demo</em>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#quote">Get a Quote</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#quote" class="nav-cta">Get Quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">London &amp; Essex · Insured &amp; Trained Cleaners</p>
+        <h1>A cleaner space is one drag away.</h1>
+        <p class="hero-sub">Residential and commercial cleaning, booked in minutes. See exactly what you'll pay before you commit — no call required.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-primary">Get My Instant Quote</a>
+          <a href="#gallery" class="btn btn-ghost">See Real Results</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-stat"><span class="num" data-count="7">0</span><span class="label">Years Trading</span></div>
+          <div class="trust-stat"><span class="num" data-count="480">0</span><span class="label">Homes Cleaned</span></div>
+          <div class="trust-stat"><span class="num" data-count="98">0</span><span class="label">% On-Time Rate</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="reveal-card">
+          <div class="reveal-frame js-reveal-frame">
+            <img class="reveal-img reveal-before" src="https://images.unsplash.com/photo-1713950788917-912f9274f123?q=80&w=1200&auto=format&fit=crop" alt="Cluttered kitchen counter before cleaning">
+            <div class="reveal-clip js-reveal-clip">
+              <img class="reveal-img reveal-after" src="https://images.unsplash.com/photo-1758273705627-937374bfa978?q=80&w=1200&auto=format&fit=crop" alt="Bright spotless living room after cleaning">
+            </div>
+            <div class="reveal-handle js-reveal-handle">
+              <span class="reveal-handle-grip">↔</span>
+            </div>
+            <span class="reveal-tag reveal-tag-left">Before</span>
+            <span class="reveal-tag reveal-tag-right">After</span>
+          </div>
+          <p class="reveal-hint">Drag to compare</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>What We Do</p>
+      <h2 data-reveal>Cleaning built around your space, not a checklist.</h2>
+      <div class="services-grid">
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <path d="M14 4h4l1 4h-6z" fill="currentColor"/>
+              <rect x="12" y="8" width="8" height="4" rx="1" fill="currentColor" opacity="0.55"/>
+              <path d="M10 12h12l1.4 14.2c.15 1.55-1.07 2.8-2.6 2.8H11.2c-1.53 0-2.75-1.25-2.6-2.8L10 12z" fill="currentColor"/>
+              <circle class="icon-accent" cx="23" cy="7" r="1.6"/>
+              <circle class="icon-accent" cx="26" cy="12" r="1.1"/>
+            </svg>
+          </div>
+          <h3>Standard House Cleaning</h3>
+          <p>Regular upkeep for kitchens, bathrooms, and living spaces — weekly, fortnightly, or one-off.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <circle cx="11" cy="21" r="5.5" fill="none" stroke="currentColor" stroke-width="2.3"/>
+              <path d="M15 17l11-11" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+              <path d="M22 10l3 3M25.5 6.5l3 3" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+              <circle class="icon-accent" cx="11" cy="21" r="1.8"/>
+            </svg>
+          </div>
+          <h3>End of Tenancy</h3>
+          <p>Deposit-safe deep cleans that satisfy landlord and letting agent inspection standards.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <rect x="6" y="9" width="20" height="19" rx="2" fill="currentColor" opacity="0.14"/>
+              <rect x="6" y="9" width="20" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M11 14h4M11 18h4M11 22h4M17 14h4M17 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path class="icon-accent-stroke" d="M17 23l2 2 4-4.5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Commercial &amp; Office</h3>
+          <p>After-hours or scheduled cleaning that keeps workplaces presentable without disrupting your team.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <path d="M18 5l7 20-9.5-4.5L8 25l4-13z" fill="currentColor" opacity="0.16"/>
+              <path d="M19 6l2 2-11 11-3-1 1-3z" fill="currentColor"/>
+              <path d="M7 26l4-1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle class="icon-accent" cx="25" cy="9" r="1.4"/>
+              <circle class="icon-accent" cx="21" cy="24" r="1" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3>After-Builders Clean</h3>
+          <p>Dust, debris, and residue removal so a freshly renovated space is actually livable.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <rect x="5" y="12" width="22" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M5 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0 3 2 4 1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path class="icon-accent-stroke" d="M9 22h5M18 22h5" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Carpet &amp; Upholstery</h3>
+          <p>Deep extraction cleaning that lifts embedded dirt and odours from soft furnishings.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <path d="M16 4l11 5v6c0 7-4.7 11.7-11 13-6.3-1.3-11-6-11-13V9z" fill="currentColor" opacity="0.14"/>
+              <path d="M16 4l11 5v6c0 7-4.7 11.7-11 13-6.3-1.3-11-6-11-13V9z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path class="icon-accent-stroke" d="M11 16l3.5 3.5L21 12" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Move In / Move Out</h3>
+          <p>A blank-slate clean timed around your move so the next chapter starts fresh.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how">
+    <div class="wrap how-grid">
+      <div class="how-copy" data-reveal>
+        <p class="eyebrow">The Process</p>
+        <h2>Three steps, start to spotless.</h2>
+        <p class="how-sub">This is the actual order things happen in — no skipped steps, no surprise call-backs.</p>
+      </div>
+      <ol class="how-steps">
+        <li data-reveal>
+          <span class="step-index">01</span>
+          <div>
+            <h3>Build your quote</h3>
+            <p>Answer a few questions below and get a real price — not an estimate range.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <span class="step-index">02</span>
+          <div>
+            <h3>Pick your slot</h3>
+            <p>Choose a time that suits your schedule, including evenings and weekends.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <span class="step-index">03</span>
+          <div>
+            <h3>We clean, you check</h3>
+            <p>Fully equipped cleaners arrive on time. You walk through before we call it done.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ IMAGE BAND ============ -->
+  <section class="image-band" data-reveal>
+    <img src="https://images.unsplash.com/photo-1758273705627-937374bfa978?q=80&w=1600&auto=format&fit=crop" alt="Bright, freshly cleaned modern living room">
+    <div class="image-band-overlay">
+      <p class="image-band-quote">"The standard other cleaning companies get compared to."</p>
+      <span class="image-band-source">— Verified client review</span>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE CALCULATOR ============ -->
+  <section class="quote" id="quote">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Instant Pricing</p>
+      <h2 data-reveal>Build your clean.</h2>
+      <p class="quote-sub" data-reveal>Every choice below updates your price in real time — see exactly what you'll pay, no phone call needed.</p>
+
+      <div class="quote-app" data-reveal>
+
+        <div class="quote-panel">
+
+          <div class="quote-progress">
+            <span class="progress-dot active" data-step-dot="1"></span>
+            <span class="progress-dot" data-step-dot="2"></span>
+            <span class="progress-dot" data-step-dot="3"></span>
+          </div>
+
+          <!-- STEP 1 -->
+          <div class="quote-step active" data-step="1">
+            <h3 class="step-title">1. Property type</h3>
+            <div class="option-grid" data-group="property">
+              <button class="option-card active" data-value="flat" data-base="45">
+                <span class="option-name">Flat / Apartment</span>
+                <span class="option-meta">from £45</span>
+              </button>
+              <button class="option-card" data-value="house" data-base="65">
+                <span class="option-name">House</span>
+                <span class="option-meta">from £65</span>
+              </button>
+              <button class="option-card" data-value="office" data-base="80">
+                <span class="option-name">Office / Commercial</span>
+                <span class="option-meta">from £80</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="quote-step" data-step="2">
+            <h3 class="step-title">2. Size &amp; frequency</h3>
+            <label class="field-label">Bedrooms / Rooms</label>
+            <div class="stepper" data-group="rooms">
+              <button type="button" class="stepper-btn" data-dir="-1">−</button>
+              <span class="stepper-value" data-stepper-value>2</span>
+              <button type="button" class="stepper-btn" data-dir="1">+</button>
+            </div>
+
+            <label class="field-label" style="margin-top:20px;">How often?</label>
+            <div class="option-grid option-grid-3" data-group="frequency">
+              <button class="option-card active" data-value="onetime" data-mult="1">
+                <span class="option-name">One-time</span>
+              </button>
+              <button class="option-card" data-value="fortnightly" data-mult="0.85">
+                <span class="option-name">Fortnightly</span>
+                <span class="option-meta">save 15%</span>
+              </button>
+              <button class="option-card" data-value="weekly" data-mult="0.7">
+                <span class="option-name">Weekly</span>
+                <span class="option-meta">save 30%</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="quote-step" data-step="3">
+            <h3 class="step-title">3. Add-ons</h3>
+            <div class="addon-list" data-group="addons">
+              <label class="addon-row">
+                <input type="checkbox" data-addon="18">
+                <span class="addon-name">Inside oven clean</span>
+                <span class="addon-price">+£18</span>
+              </label>
+              <label class="addon-row">
+                <input type="checkbox" data-addon="15">
+                <span class="addon-name">Interior windows</span>
+                <span class="addon-price">+£15</span>
+              </label>
+              <label class="addon-row">
+                <input type="checkbox" data-addon="22">
+                <span class="addon-name">Carpet steam clean</span>
+                <span class="addon-price">+£22</span>
+              </label>
+              <label class="addon-row">
+                <input type="checkbox" data-addon="12">
+                <span class="addon-name">Fridge interior</span>
+                <span class="addon-price">+£12</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quote-nav">
+            <button class="btn btn-ghost" id="quotePrev" disabled>Back</button>
+            <button class="btn btn-primary" id="quoteNext">Continue</button>
+          </div>
+        </div>
+
+        <!-- RECEIPT -->
+        <aside class="receipt">
+          <p class="receipt-label">Your estimate</p>
+          <p class="receipt-total"><span>£</span><span id="receiptTotal">45</span></p>
+          <p class="receipt-caption" id="receiptCaption">Flat / Apartment · One-time</p>
+          <ul class="receipt-lines" id="receiptLines">
+            <li><span>Base rate</span><span>£45</span></li>
+          </ul>
+
+          <form class="receipt-email-form" id="quoteEmailForm">
+            <label for="quoteEmail" class="receipt-email-label">Get this quote in your inbox</label>
+            <div class="receipt-email-row">
+              <input type="email" id="quoteEmail" name="email" placeholder="you@email.com" required>
+              <button type="submit" class="btn btn-cta receipt-cta" id="sendQuoteBtn">Send My Quote</button>
+            </div>
+            <p class="receipt-email-status" id="quoteEmailStatus" aria-live="polite"></p>
+          </form>
+
+          <p class="receipt-note">Final price confirmed after a quick photo or walkthrough.</p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Recent Work</p>
+      <h2 data-reveal>Real properties, really cleaned.</h2>
+      <div class="gallery-grid">
+        <img data-reveal src="https://images.unsplash.com/photo-1758273238415-01ec03d9ef27?q=80&w=900&auto=format&fit=crop" alt="Bright living room floor being mopped">
+        <img data-reveal src="https://images.unsplash.com/photo-1758272421751-963195322eaa?q=80&w=900&auto=format&fit=crop" alt="Wooden surface being wiped clean">
+        <img data-reveal src="https://images.unsplash.com/photo-1686178827149-6d55c72d81df?q=80&w=900&auto=format&fit=crop" alt="Vacuuming an ottoman in a tidy room">
+        <img data-reveal src="https://images.unsplash.com/photo-1758523670739-0d26a3ee976d?q=80&w=900&auto=format&fit=crop" alt="Vacuuming a bright modern living room">
+        <img data-reveal src="https://images.unsplash.com/photo-1713110824336-f78c320dcf8e?q=80&w=900&auto=format&fit=crop" alt="Cleaning a chair with white gloves">
+        <img data-reveal src="https://images.unsplash.com/photo-1647381518264-97ff1835026f?q=80&w=900&auto=format&fit=crop" alt="Woman holding a broom in a kitchen">
+      </div>
+      <p class="gallery-cta" data-reveal><a href="portfolio.html" class="btn btn-ghost">View Full Before &amp; After Portfolio →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Client Reviews</p>
+      <h2 data-reveal>Trusted by homes and businesses across London.</h2>
+      <div class="testimonial-track" data-reveal>
+        <blockquote class="testimonial-card">
+          <p>"Booked in two minutes and the price on screen was the price I paid. No surprises at the door."</p>
+          <cite>— Amara O., Clapham</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"Our office cleaner used to reschedule constantly. The team has shown up on time every single week."</p>
+          <cite>— Daniel F., Office Manager, Shoreditch</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"End of tenancy clean got our full deposit back. Landlord had zero complaints."</p>
+          <cite>— Priya S., Walthamstow</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-band" id="contact">
+    <div class="wrap cta-band-inner" data-reveal>
+      <div>
+        <h2>Ready for a cleaner space?</h2>
+        <p>Get your instant quote or call the team directly — we're on the phone 7 days a week.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a href="#quote" class="btn btn-cta">Get My Instant Quote</a>
+        <a href="tel:02071234567" class="btn btn-outline">Call 0207 123 4567</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="#top" class="brand brand-footer">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <path d="M20 4C20 4 8 15 8 24a12 12 0 0 0 24 0C32 15 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M14 25c0 4 2.7 7 6 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        Cleaning Website <em>Demo</em>
+      </a>
+      <p class="footer-tag">Residential &amp; commercial cleaning across London &amp; Essex.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Standard Cleaning</a>
+      <a href="#services">End of Tenancy</a>
+      <a href="#services">Commercial</a>
+      <a href="#services">After-Builders</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#quote">Get a Quote</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:02071234567">0207 123 4567</a>
+      <a href="mailto:hello@cleaningwebsitedemo.co.uk">hello@cleaningwebsitedemo.co.uk</a>
+      <span>London &amp; Essex · 7 days a week</span>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 Cleaning Website Demo. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

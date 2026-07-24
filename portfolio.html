@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Cleaning Website Demo</title>
+<meta name="description" content="Real before-and-after results from recent cleaning jobs. Drag each photo to compare.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <path d="M20 4C20 4 8 15 8 24a12 12 0 0 0 24 0C32 15 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M14 25c0 4 2.7 7 6 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      Cleaning Website <em>Demo</em>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#quote">Get a Quote</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#testimonials">Reviews</a>
+      <a href="index.html#quote" class="nav-cta">Get Quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ PORTFOLIO HERO ============ -->
+  <section class="portfolio-hero">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Before &amp; After</p>
+      <h1>Real jobs. Real results.</h1>
+      <p>Every pair below is a genuine before-and-after from recent work. Drag the divider on any photo to see the difference for yourself.</p>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO GRID ============ -->
+  <section class="wrap">
+    <div class="portfolio-grid">
+
+      <article class="portfolio-card" data-reveal>
+        <div class="reveal-frame js-reveal-frame" data-start-at="50">
+          <img class="reveal-img reveal-before" src="https://images.unsplash.com/photo-1713950788917-912f9274f123?q=80&w=1200&auto=format&fit=crop" alt="Cluttered kitchen before cleaning">
+          <div class="reveal-clip js-reveal-clip">
+            <img class="reveal-img reveal-after" src="https://images.unsplash.com/photo-1758272421751-963195322eaa?q=80&w=1200&auto=format&fit=crop" alt="Clean wiped kitchen surface after cleaning">
+          </div>
+          <div class="reveal-handle js-reveal-handle"><span class="reveal-handle-grip">↔</span></div>
+          <span class="reveal-tag reveal-tag-left">Before</span>
+          <span class="reveal-tag reveal-tag-right">After</span>
+        </div>
+        <div class="portfolio-card-label">
+          <h3>Kitchen Deep Clean</h3>
+          <span>Standard Cleaning</span>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-reveal>
+        <div class="reveal-frame js-reveal-frame" data-start-at="50">
+          <img class="reveal-img reveal-before" src="https://images.unsplash.com/photo-1641232458416-feace752b346?q=80&w=1200&auto=format&fit=crop" alt="Cluttered living room before cleaning">
+          <div class="reveal-clip js-reveal-clip">
+            <img class="reveal-img reveal-after" src="https://images.unsplash.com/photo-1758273705627-937374bfa978?q=80&w=1200&auto=format&fit=crop" alt="Bright tidy living room after cleaning">
+          </div>
+          <div class="reveal-handle js-reveal-handle"><span class="reveal-handle-grip">↔</span></div>
+          <span class="reveal-tag reveal-tag-left">Before</span>
+          <span class="reveal-tag reveal-tag-right">After</span>
+        </div>
+        <div class="portfolio-card-label">
+          <h3>Living Room Reset</h3>
+          <span>End of Tenancy</span>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-reveal>
+        <div class="reveal-frame js-reveal-frame" data-start-at="50">
+          <img class="reveal-img reveal-before" src="https://images.unsplash.com/photo-1566699270403-3f7e3f340664?q=80&w=1200&auto=format&fit=crop" alt="Cluttered office desk before cleaning">
+          <div class="reveal-clip js-reveal-clip">
+            <img class="reveal-img reveal-after" src="https://images.unsplash.com/photo-1746021535489-00edc5efb203?q=80&w=1200&auto=format&fit=crop" alt="Tidy modern office after cleaning">
+          </div>
+          <div class="reveal-handle js-reveal-handle"><span class="reveal-handle-grip">↔</span></div>
+          <span class="reveal-tag reveal-tag-left">Before</span>
+          <span class="reveal-tag reveal-tag-right">After</span>
+        </div>
+        <div class="portfolio-card-label">
+          <h3>Office Desk Clear-Out</h3>
+          <span>Commercial &amp; Office</span>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-reveal>
+        <div class="reveal-frame js-reveal-frame" data-start-at="50">
+          <img class="reveal-img reveal-before" src="https://images.unsplash.com/photo-1546617956-e3deefb51d58?q=80&w=1200&auto=format&fit=crop" alt="Sofa and living space before cleaning">
+          <div class="reveal-clip js-reveal-clip">
+            <img class="reveal-img reveal-after" src="https://images.unsplash.com/photo-1758273238415-01ec03d9ef27?q=80&w=1200&auto=format&fit=crop" alt="Freshly mopped bright floor after cleaning">
+          </div>
+          <div class="reveal-handle js-reveal-handle"><span class="reveal-handle-grip">↔</span></div>
+          <span class="reveal-tag reveal-tag-left">Before</span>
+          <span class="reveal-tag reveal-tag-right">After</span>
+        </div>
+        <div class="portfolio-card-label">
+          <h3>Floor &amp; Upholstery Refresh</h3>
+          <span>Carpet &amp; Upholstery</span>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="gallery-cta" data-reveal><a href="index.html#quote" class="btn btn-cta">Get a Quote for Your Space</a></p>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="index.html" class="brand brand-footer">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <path d="M20 4C20 4 8 15 8 24a12 12 0 0 0 24 0C32 15 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M14 25c0 4 2.7 7 6 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        Cleaning Website <em>Demo</em>
+      </a>
+      <p class="footer-tag">Residential &amp; commercial cleaning across London &amp; Essex.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="index.html#services">Standard Cleaning</a>
+      <a href="index.html#services">End of Tenancy</a>
+      <a href="index.html#services">Commercial</a>
+      <a href="index.html#services">After-Builders</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="index.html#quote">Get a Quote</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#testimonials">Reviews</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:02071234567">0207 123 4567</a>
+      <a href="mailto:hello@cleaningwebsitedemo.co.uk">hello@cleaningwebsitedemo.co.uk</a>
+      <span>London &amp; Essex · 7 days a week</span>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 Cleaning Website Demo. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
