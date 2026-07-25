@@ -95,7 +95,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     setReveal(parseFloat(frame.dataset.startAt) || 50);
+
+    // Auto-demo sweep: gives the hero visible motion on load instead of
+    // sitting static until someone thinks to drag it. Runs once, then hands
+    // control to the visitor. Skipped entirely if they prefer reduced motion.
+    if (frame.hasAttribute('data-auto-demo') && !prefersReducedMotion) {
+      let demoStart = null;
+      const demoDuration = 2600;
+      const from = parseFloat(frame.dataset.startAt) || 50;
+      const peak = 78;
+
+      const easeInOut = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+      function demoTick(now) {
+        if (dragging) return; // visitor took over, stop the auto-demo
+        if (demoStart === null) demoStart = now;
+        const elapsed = now - demoStart;
+        const progress = Math.min(elapsed / demoDuration, 1);
+        // Sweep out to `peak` and back to `from` in one smooth motion
+        const wave = Math.sin(progress * Math.PI);
+        const eased = easeInOut(wave);
+        setReveal(from + (peak - from) * eased);
+        if (progress < 1) {
+          requestAnimationFrame(demoTick);
+        } else {
+          setReveal(from);
+        }
+      }
+      // Small delay so it starts just after the hero has faded in
+      setTimeout(() => requestAnimationFrame(demoTick), 700);
+
+      // Stop the demo the instant a visitor interacts
+      handle.addEventListener('mousedown', () => { demoStart = -Infinity; });
+      handle.addEventListener('touchstart', () => { demoStart = -Infinity; }, { passive: true });
+      frame.addEventListener('click', () => { demoStart = -Infinity; });
+    }
   }
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   document.querySelectorAll('.js-reveal-frame').forEach(initReveal);
 
